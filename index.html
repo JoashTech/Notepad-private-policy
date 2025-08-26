@@ -16,7 +16,7 @@
             background-color: #f9f9f9;
             color: #333;
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #1a73e8;
         }
         h1 {
@@ -26,6 +26,10 @@
         h2 {
             font-size: 1.5em;
             margin-top: 1.5em;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-top: 1em;
         }
         p, li {
             font-size: 1em;
@@ -63,6 +67,9 @@
             h2 {
                 font-size: 1.2em;
             }
+            h3 {
+                font-size: 1em;
+            }
             p, li {
                 font-size: 0.9em;
             }
@@ -72,26 +79,26 @@
 <body>
     <div class="container">
         <h1>Privacy Policy for Notepad App</h1>
-        <p><strong>Last Updated: August 22, 2025</strong></p>
-        <p>JoshTechApps ("we," "us," or "our") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how the Notepad app collects, uses, stores, shares, and protects your data. By using the app, you consent to the practices described below. For questions or concerns, contact us at <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a>.</p>
+        <p><strong>Last Updated: August 26, 2025</strong></p>
+        <p>JoshTechApps ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy outlines how the Notepad app collects, uses, stores, shares, and protects your personal information. By using the app, you consent to these practices. For inquiries, contact us at <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a>.</p>
 
         <h2>1. Information We Collect</h2>
 
         <h3>a. User-Generated Data</h3>
         <ul>
-            <li><strong>Notes</strong>: You can create and manage notes with the following data, stored locally in the app’s database:
+            <li><strong>Notes</strong>: You can create and manage notes stored locally in the app’s database, including:
                 <ul>
                     <li>Title and content</li>
-                    <li>Note type (e.g., text, checklist, to-do)</li>
+                    <li>Note type (text, checklist, to-do)</li>
                     <li>Creation and update timestamps</li>
-                    <li>Reminder settings (time, selected days, repeat weekly)</li>
+                    <li>Reminder settings (time, days, weekly repeat)</li>
                     <li>Theme preferences</li>
                     <li>Passwords and security questions/answers (optional, for protected notes)</li>
                     <li>Status flags (archived, trashed, notified, selected)</li>
                 </ul>
             </li>
-            <li><strong>Calendar Interactions</strong>: The app accesses note creation and reminder dates to display notes in a calendar view.</li>
-            <li><strong>User Interactions</strong>: Actions such as creating, editing, sharing, archiving, trashing, or setting reminders for notes are recorded locally to manage app functionality.</li>
+            <li><strong>Calendar Interactions</strong>: The app accesses note creation and reminder dates for calendar view display.</li>
+            <li><strong>User Interactions</strong>: Actions like creating, editing, sharing, archiving, trashing, or setting reminders are recorded locally for functionality.</li>
         </ul>
 
         <h3>b. User Preferences</h3>
@@ -100,155 +107,158 @@
             <li>Theme mode (light, dark, system default)</li>
             <li>View type (grid or list)</li>
             <li>Font size for note display</li>
-            <li>Sort order for notes (e.g., by modified time, created time, alphabetical)</li>
-            <li>Language selection (e.g., English, Arabic)</li>
+            <li>Sort order (modified time, created time, alphabetical)</li>
+            <li>Language selection (English, German, French, Spanish, Portuguese, Russian, Swahili, Arabic, Bengali, Hindi, Chinese, Filipino, Italian, Luganda)</li>
             <li>Auto-save toggle</li>
-            <li>Notification sound selection (default app sounds, custom ringtones, or none)</li>
+            <li>Notification sound (default, custom ringtones, or none)</li>
             <li>App password (optional)</li>
             <li>Fingerprint authentication setting</li>
-            <li>Remember me setting and timestamp (for bypassing authentication for 24 hours)</li>
-            <li><strong>Notification Sounds</strong>: If you select a custom ringtone, the app stores the URI of the chosen audio file.</li>
+            <li>Remember me setting and timestamp (24-hour authentication bypass)</li>
+            <li><strong>Notification Sounds</strong>: Stores URI of selected audio files for custom ringtones.</li>
         </ul>
 
         <h3>c. Authentication Data</h3>
         <ul>
-            <li><strong>Google Sign-In</strong>: For optional backup and restore features, we collect:
+            <li><strong>Google Sign-In</strong>: For optional backups, we collect:
                 <ul>
                     <li>Google account email and display name (via Firebase Authentication)</li>
                 </ul>
             </li>
             <li><strong>Passwords</strong>: App and note-specific passwords, stored locally in plain text.</li>
-            <li><strong>Security Questions/Answers</strong>: For password recovery, stored locally with notes.</li>
-            <li><strong>Fingerprint Authentication</strong>: Optional biometric data, managed by your device’s system.</li>
+            <li><strong>Security Questions/Answers</strong>: For password recovery, stored locally.</li>
+            <li><strong>Fingerprint Authentication</strong>: Optional biometric data, managed by your device.</li>
         </ul>
 
         <h3>d. Device and Permission Data</h3>
         <ul>
-            <li><strong>Permissions</strong>: The app may request:
+            <li><strong>Permissions</strong>:
                 <ul>
-                    <li><strong>POST_NOTIFICATIONS</strong>: To display reminder notifications.</li>
-                    <li><strong>INTERNET</strong>: For Google Sign-In, Google Drive backups, and advertisements.</li>
-                    <li><strong>SCHEDULE_EXACT_ALARM</strong>: For precise reminder scheduling.</li>
-                    <li><strong>READ_MEDIA_AUDIO</strong> or <strong>READ_EXTERNAL_STORAGE</strong> (pre-Android 11): To access custom notification sounds.</li>
-                    <li><strong>RECEIVE_BOOT_COMPLETED</strong>: To reschedule reminders after device reboot.</li>
-                    <li><strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</strong>: To ensure reliable reminders.</li>
+                    <li><strong>POST_NOTIFICATIONS</strong>: For reminder notifications.</li>
+                    <li><strong>INTERNET</strong>: For Google Sign-In, Drive backups, ads, analytics, and Crashlytics.</li>
+                    <li><strong>SCHEDULE_EXACT_ALARM</strong>: For precise reminders.</li>
+                    <li><strong>READ_MEDIA_AUDIO</strong> or <strong>READ_EXTERNAL_STORAGE</strong> (pre-Android 11): For custom notification sounds.</li>
+                    <li><strong>RECEIVE_BOOT_COMPLETED</strong>: To reschedule reminders after reboot.</li>
+                    <li><strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</strong>: For reliable reminders.</li>
                 </ul>
             </li>
-            <li><strong>Device Data</strong>: Custom ringtone URIs and metadata (e.g., file names) when you select audio files.</li>
-            <li><strong>Widgets</strong>: Interaction data from app widgets (e.g., opening notes or reminders).</li>
+            <li><strong>Device Data</strong>: Custom ringtone URIs and metadata (e.g., file names).</li>
         </ul>
 
-        <h3>e. Advertising Data</h3>
-        <p>We use Google AdMob to serve banner ads, which may collect:</p>
+        <h3>e. Analytics and Crash Reporting</h3>
         <ul>
-            <li>Device identifiers (e.g., Advertising ID)</li>
-            <li>IP address</li>
-            <li>App usage data for personalized ads</li>
+            <li><strong>Firebase Analytics</strong>: Collects anonymized data (screen views, button clicks, session duration) to improve user experience.</li>
+            <li><strong>Firebase Crashlytics</strong>: Collects crash logs, stack traces, and diagnostics (device info, battery usage) to enhance app stability.</li>
+        </ul>
+
+        <h3>f. Advertising Data</h3>
+        <ul>
+            <li><strong>Google AdMob</strong>: Collects device identifiers (Advertising ID), IP address, and usage data for personalized ads.</li>
         </ul>
 
         <h2>2. How We Use Your Information</h2>
         <ul>
-            <li><strong>Notes and Calendar</strong>: To create, edit, display, and organize notes, including in a calendar view based on creation or reminder dates.</li>
-            <li><strong>Reminders</strong>: To schedule and display notifications with note title and content, using AlarmManager for one-time or recurring reminders.</li>
-            <li><strong>Settings and Preferences</strong>: To personalize your experience (e.g., theme, language, font size, view type, sort order, auto-save, notification sounds).</li>
-            <li><strong>Authentication</strong>: To secure app and note access via passwords, security questions, or biometric authentication.</li>
-            <li><strong>Backups</strong>: To save and restore notes to/from your Google Drive account (optional, user-initiated).</li>
-            <li><strong>Notifications</strong>: To show reminders, which may display note content on the lock screen, with Do Not Disturb (DND) access to ensure reliability.</li>
-            <li><strong>Ads</strong>: To deliver personalized or non-personalized ads via AdMob.</li>
-            <li><strong>Widgets</strong>: To provide quick access to notes, reminders, or note creation from your device’s home screen.</li>
-            <li><strong>Support</strong>: To process feedback sent to <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a>.</li>
-            <li><strong>Language Support</strong>: To apply your preferred language, including right-to-left (RTL) support for languages like Arabic.</li>
+            <li><strong>Notes and Calendar</strong>: Create, edit, display, and organize notes in a calendar view.</li>
+            <li><strong>Reminders</strong>: Schedule notifications with note content using AlarmManager.</li>
+            <li><strong>Settings</strong>: Personalize theme, language, font, view, sort order, auto-save, and sounds.</li>
+            <li><strong>Authentication</strong>: Secure app/notes with passwords, questions, or biometrics.</li>
+            <li><strong>Backups</strong>: Save/restore notes to Google Drive (user-initiated).</li>
+            <li><strong>Notifications</strong>: Display reminders, bypassing DND for reliability.</li>
+            <li><strong>Analytics and Crash Reporting</strong>: Improve app performance and stability via Firebase.</li>
+            <li><strong>Ads</strong>: Deliver personalized/non-personalized ads via AdMob.</li>
+            <li><strong>Support</strong>: Process feedback sent to <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a>.</li>
+            <li><strong>Language Support</strong>: Apply preferred language, including RTL for Arabic.</li>
         </ul>
 
         <h2>3. Data Storage</h2>
         <ul>
-            <li><strong>Local Storage</strong>: Notes, preferences, passwords, and security answers are stored locally on your device in a secure database and preferences file. <strong>Note</strong>: Passwords and security answers are stored in plain text, so please secure your device with a strong lock screen.</li>
-            <li><strong>Cloud Storage</strong>: If you enable backups, notes are stored in your Google Drive appDataFolder, accessible only by your Google account and the app.</li>
+            <li><strong>Local Storage</strong>: Notes, preferences, passwords, and security answers stored in a secure database. <strong>Note</strong>: Passwords stored in plain text; secure your device.</li>
+            <li><strong>Cloud Storage</strong>: Backups stored in Google Drive’s appDataFolder; analytics/crash data on Firebase servers.</li>
             <li><strong>Retention</strong>:
                 <ul>
-                    <li>Local data is retained until you delete it (e.g., via trash or app uninstallation).</li>
-                    <li>Trashed notes remain in the database until permanently deleted or restored.</li>
-                    <li>Cloud backups persist in Google Drive until you delete them.</li>
+                    <li>Local data retained until deleted or app uninstalled.</li>
+                    <li>Trashed notes retained until permanently deleted/restored.</li>
+                    <li>Cloud backups persist until deleted in Google Drive.</li>
+                    <li>Analytics/crash data retained per Google’s policies.</li>
                 </ul>
             </li>
-            <li><strong>Logs</strong>: Debugging logs are stored locally and not sent externally unless explicitly enabled in future updates.</li>
+            <li><strong>Logs</strong>: Debugging logs stored locally; crash logs sent to Firebase.</li>
         </ul>
 
         <h2>4. Data Sharing</h2>
         <ul>
             <li><strong>Google Services</strong>:
                 <ul>
-                    <li><strong>Firebase Authentication</strong>: Manages Google Sign-In data for backups. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</li>
-                    <li><strong>Google Drive API</strong>: Stores backups in your Google Drive account, encrypted during transfer.</li>
-                    <li><strong>Google AdMob</strong>: Serves ads and may collect data for personalization. See <a href="https://support.google.com/admob/answer/6128543">AdMob’s Privacy Policy</a>.</li>
+                    <li><strong>Firebase Authentication</strong>: Manages Google Sign-In. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</li>
+                    <li><strong>Google Drive API</strong>: Stores encrypted backups.</li>
+                    <li><strong>Firebase Analytics/Crashlytics</strong>: Shares anonymized usage/crash data. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</li>
+                    <li><strong>Google AdMob</strong>: Serves ads. See <a href="https://support.google.com/admob/answer/6128543">AdMob’s Privacy Policy</a>.</li>
                 </ul>
             </li>
             <li><strong>User-Initiated Sharing</strong>:
                 <ul>
-                    <li><strong>Note Sharing</strong>: You can share note title and content via external apps (e.g., email, messaging). Be cautious when sharing sensitive information.</li>
-                    <li><strong>App Sharing</strong>: You can share app details via external apps or link to the Google Play Store.</li>
-                    <li><strong>Customer Support</strong>: Feedback sent to <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a> may include user-provided data.</li>
+                    <li><strong>Note Sharing</strong>: Share notes via external apps (e.g., email).</li>
+                    <li><strong>App Sharing</strong>: Share app details or Play Store link.</li>
+                    <li><strong>Support</strong>: Feedback may include user data.</li>
                 </ul>
             </li>
-            <li><strong>Widgets</strong>: Interactions with app widgets use note data locally and do not involve external sharing.</li>
-            <li><strong>No Other Sharing</strong>: We do not share your data with third parties except as described above or with your explicit consent.</li>
+            <li><strong>No Other Sharing</strong>: Data not shared except as described or with consent.</li>
         </ul>
 
         <h2>5. Data Security</h2>
         <ul>
-            <li><strong>Encryption</strong>: Data transferred to Google Drive is encrypted using HTTPS.</li>
-            <li><strong>Local Security</strong>: Data is stored in device-protected storage, but passwords and security answers are stored in plain text, posing a risk if your device is compromised.</li>
-            <li><strong>Biometric Authentication</strong>: Optional fingerprint authentication adds security on supported devices, managed by your device’s system.</li>
-            <li><strong>Notifications</strong>: Reminder notifications may display note content on the lock screen, controllable via your device’s notification settings.</li>
-            <li><strong>DND Access</strong>: The app requests permission to bypass Do Not Disturb mode to ensure reminder notifications are delivered reliably.</li>
+            <li><strong>Encryption</strong>: HTTPS for Google Drive/Firebase transfers.</li>
+            <li><strong>Local Security</strong>: Device-protected storage; plain-text passwords pose a risk.</li>
+            <li><strong>Biometrics</strong>: Fingerprint authentication via device system.</li>
+            <li><strong>Notifications</strong>: Note content on lock screen, controlled by device settings.</li>
+            <li><strong>DND Access</strong>: Bypasses Do Not Disturb for reminders.</li>
         </ul>
 
         <h2>6. User Controls</h2>
         <ul>
-            <li><strong>Notes</strong>: Create, edit, lock, archive, trash, restore, or delete notes.</li>
-            <li><strong>Backups</strong>: Enable or disable Google Drive backups and delete backups from your Google Drive account.</li>
-            <li><strong>Settings</strong>: Toggle auto-save, select notification sounds, set or clear app passwords, enable or disable fingerprint authentication, manage remember me settings, choose themes, view types, font sizes, sort orders, and languages.</li>
-            <li><strong>Ads</strong>: Opt out of personalized ads via AdMob settings or your device’s advertising preferences (e.g., reset Advertising ID).</li>
-            <li><strong>Notifications</strong>: Control reminder visibility and sound via device settings.</li>
-            <li><strong>Permissions</strong>: Grant or deny permissions (e.g., notifications, storage) through system prompts.</li>
-            <li><strong>Data Deletion</strong>: Delete local data by moving notes to trash and permanently deleting them or uninstalling the app. Delete cloud backups via Google Drive.</li>
+            <li><strong>Notes</strong>: Create, edit, lock, archive, trash, restore, or delete.</li>
+            <li><strong>Backups</strong>: Enable/disable or delete Google Drive backups.</li>
+            <li><strong>Settings</strong>: Manage auto-save, sounds, passwords, biometrics, themes, views, fonts, sort orders, and languages.</li>
+            <li><strong>Analytics/Crashlytics</strong>: Opt out via device settings or uninstallation.</li>
+            <li><strong>Ads</strong>: Opt out of personalized ads via AdMob/device settings.</li>
+            <li><strong>Notifications</strong>: Control visibility/sound via device settings.</li>
+            <li><strong>Permissions</strong>: Grant/deny via system prompts.</li>
+            <li><strong>Data Deletion</strong>: Delete local data via trash/uninstallation; cloud data via Google Drive. Request analytics deletion at <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a>.</li>
         </ul>
 
         <h2>7. Permissions</h2>
-        <p>The app requests the following permissions to provide full functionality:</p>
         <ul>
-            <li><strong>POST_NOTIFICATIONS</strong>: To display reminder notifications.</li>
-            <li><strong>INTERNET</strong>: For Google Sign-In, Google Drive backups, and ads.</li>
-            <li><strong>SCHEDULE_EXACT_ALARM</strong>: For precise reminder scheduling.</li>
-            <li><strong>READ_MEDIA_AUDIO</strong> or <strong>READ_EXTERNAL_STORAGE</strong> (pre-Android 11): To access custom notification sounds.</li>
-            <li><strong>RECEIVE_BOOT_COMPLETED</strong>: To reschedule reminders after device reboot.</li>
-            <li><strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</strong>: To ensure reliable reminders.</li>
+            <li><strong>POST_NOTIFICATIONS</strong>: Reminder notifications.</li>
+            <li><strong>INTERNET</strong>: Sign-in, backups, ads, analytics, Crashlytics.</li>
+            <li><strong>SCHEDULE_EXACT_ALARM</strong>: Precise reminders.</li>
+            <li><strong>READ_MEDIA_AUDIO</strong>/<strong>READ_EXTERNAL_STORAGE</strong>: Custom sounds.</li>
+            <li><strong>RECEIVE_BOOT_COMPLETED</strong>: Reschedule reminders post-reboot.</li>
+            <li><strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</strong>: Reliable reminders.</li>
         </ul>
 
         <h2>8. Third-Party Services</h2>
-        <p>We use the following third-party services, which may collect data as described in their privacy policies:</p>
         <ul>
-            <li><strong>Firebase Authentication</strong>: Manages Google Sign-In for backups. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</li>
-            <li><strong>Google Drive API</strong>: Handles note backups and restores.</li>
-            <li><strong>Google AdMob</strong>: Serves banner ads in the app. See <a href="https://support.google.com/admob/answer/6128543">AdMob’s Privacy Policy</a>.</li>
+            <li><strong>Firebase Authentication</strong>: Google Sign-In. <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</li>
+            <li><strong>Firebase Analytics</strong>: Usage data. <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</li>
+            <li><strong>Firebase Crashlytics</strong>: Crash logs. <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</li>
+            <li><strong>Google Drive API</strong>: Backups/restores.</li>
+            <li><strong>Google AdMob</strong>: Ads. <a href="https://support.google.com/admob/answer/6128543">AdMob’s Privacy Policy</a>.</li>
         </ul>
 
         <h2>9. Your Rights</h2>
         <ul>
-            <li><strong>Access</strong>: View your notes, preferences, and backups within the app or export them via sharing or Google Drive backups.</li>
-            <li><strong>Delete</strong>: Delete notes, clear preferences, or uninstall the app to remove local data. Delete backups from Google Drive to remove cloud data.</li>
-            <li><strong>Opt-Out</strong>: Disable personalized ads via AdMob or device settings.</li>
-            <li><strong>Privacy Requests</strong>: Contact <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a> to exercise your rights under GDPR, CCPA, or other applicable laws (e.g., data access, deletion, or portability).</li>
+            <li><strong>Access</strong>: View/export notes, preferences, backups.</li>
+            <li><strong>Delete</strong>: Delete local data (trash/uninstall); cloud data (Google Drive); analytics data (contact us).</li>
+            <li><strong>Opt-Out</strong>: Disable personalized ads or analytics.</li>
+            <li><strong>Privacy Requests</strong>: Email <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a> for GDPR/CCPA rights.</li>
         </ul>
-
-        <h2>10. Children’s Privacy</h2>
+<h2>10. Children’s Privacy</h2>
         <p>If the app is intended for users under 13 (or 16 in some regions), we comply with the Children’s Online Privacy Protection Act (COPPA) and GDPR-K by limiting data collection and requiring parental consent. Please contact us at <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a> for details on parental controls or to provide consent.</p>
 
         <h2>11. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy to reflect changes in the app’s functionality or legal requirements. Updates will be posted in the app (via the Settings menu) and on our website (if applicable), with notifications via the Google Play Store. Your continued use of the app after updates constitutes acceptance of the revised policy.</p>
+        <p>Updates will be posted in-app (Settings) and on our website, with Google Play Store notifications. Continued use implies acceptance.</p>
 
         <h2>12. Contact Us</h2>
-        <p>For questions, concerns, or to exercise your privacy rights, email us at <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a>.</p>
+        <p>Email <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a> for questions or privacy rights.</p>
 
         <div class="footer">
             <p>&copy; 2025 JoshTechApps. All rights reserved.</p>
