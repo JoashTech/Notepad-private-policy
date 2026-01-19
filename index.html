@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notepad App Privacy Policy</title>
+    <title>Privacy Policy - Notepad App</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,42 +19,14 @@
         h1, h2, h3 {
             color: #1a73e8;
         }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 0.5em;
-        }
-        h2 {
-            font-size: 1.5em;
-            margin-top: 1.5em;
-            border-bottom: 2px solid #1a73e8;
-            padding-bottom: 0.5em;
-        }
-        h3 {
-            font-size: 1.2em;
-            margin-top: 1em;
-            color: #333;
-        }
-        p, li {
-            font-size: 1em;
-            margin-bottom: 0.8em;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        a {
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+        h1 { font-size: 2em; margin-bottom: 0.5em; }
+        h2 { font-size: 1.5em; margin-top: 1.5em; border-bottom: 2px solid #1a73e8; padding-bottom: 0.5em; }
+        h3 { font-size: 1.2em; margin-top: 1em; color: #333; }
+        p, li { font-size: 1em; margin-bottom: 0.8em; }
+        ul { margin-left: 20px; }
+        a { color: #1a73e8; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+        .container { background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         .footer {
             margin-top: 2em;
             text-align: center;
@@ -63,54 +35,39 @@
             border-top: 1px solid #ddd;
             padding-top: 1em;
         }
-        .app-icon {
+        .app-icon { display: block; margin: 0 auto 20px; max-width: 100px; }
+        .policy-links { background-color: #f0f7ff; padding: 15px; border-radius: 5px; margin: 15px 0; }
+        .highlight { background-color: #fff3cd; padding: 10px; border-radius: 5px; border-left: 4px solid #ffc107; margin: 10px 0; }
+        .website-link {
             display: block;
-            margin: 0 auto 20px;
-            max-width: 100px;
-        }
-        .policy-links {
-            background-color: #f0f7ff;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 15px 0;
-        }
-        .highlight {
-            background-color: #fff3cd;
-            padding: 10px;
-            border-radius: 5px;
-            border-left: 4px solid #ffc107;
-            margin: 10px 0;
+            margin: 20px 0;
+            padding: 12px;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #bbdefb;
         }
         @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            h1 {
-                font-size: 1.5em;
-            }
-            h2 {
-                font-size: 1.2em;
-            }
-            h3 {
-                font-size: 1em;
-            }
-            p, li {
-                font-size: 0.9em;
-            }
-            .container {
-                padding: 20px;
-            }
-            .app-icon {
-                max-width: 80px;
-            }
+            body { padding: 10px; }
+            h1 { font-size: 1.5em; }
+            h2 { font-size: 1.2em; }
+            h3 { font-size: 1em; }
+            p, li { font-size: 0.9em; }
+            .container { padding: 20px; }
+            .app-icon { max-width: 80px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://raw.githubusercontent.com/JoashTech/Notepad-private-policy/main/ic_notepad_icon.png" alt="Basic Notepad Icon" class="app-icon">
+        <img src="https://raw.githubusercontent.com/JoashTech/Notepad-private-policy/main/ic_notepad_icon.png" 
+             alt="Notepad App Icon" 
+             class="app-icon">
+
         <h1>Privacy Policy for Notepad App</h1>
-        <p><strong>Last Updated: 04 November, 2025</strong></p>
+        <p><strong>Last Updated: 19 January, 2026</strong></p>
+
         <p>JoshTechApps ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy outlines how the Notepad app handles and processes your information. By using the app, you consent to these practices. For inquiries, contact us at <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a>.</p>
 
         <div class="policy-links">
@@ -236,9 +193,21 @@
         <h2>10. Contact Information</h2>
         <p>For privacy-related questions, data deletion requests, or additional information, contact us at: <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a></p>
 
+<div class="website-link">
+            <p>Visit our official website for more information:</p>
+            <a href="https://joshtechapps.netlify.app" target="_blank">
+                Visit Our Website For More
+            </a>
+        </div>
+
         <div class="footer">
-            <p>&copy; 2025 JoshTechApps. All rights reserved.</p>
+            © <span id="currentYear"></span> JoshTechApps. All rights reserved.
         </div>
     </div>
+
+    <script>
+        // Automatically set current year (only the latest year)
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
